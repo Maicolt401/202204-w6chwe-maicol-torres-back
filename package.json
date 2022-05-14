@@ -7,7 +7,8 @@
     "test": "jest --watchAll",
     "prepare": "husky install",
     "start": "node .",
-    "star-dev": "nodemon . -q"
+    "star-dev": "nodemon . -q",
+    "test-coverage": "jest --coverage --watchAll=false"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^9.2.0",
+    "coverage": "^0.4.1",
     "debug": "^4.3.4",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
