@@ -1,7 +1,7 @@
+require("dotenv").config();
 const debug = require("debug")("robots:server:initialServer");
 const chalk = require("chalk");
 const app = require(".");
-require("dotenv").config();
 
 const initialServer = (port) =>
   new Promise((resolve, reject) => {

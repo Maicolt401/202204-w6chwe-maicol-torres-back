@@ -1,8 +1,8 @@
 const mockRobots = require("../mocks/robots");
 const getRobots = require("./robotsControllers");
 
-jest.mock("../../db/models/Robot", () => ({
-  ...jest.requireActual("../../db/models/Robot"),
+jest.mock("../../db/models/robot", () => ({
+  ...jest.requireActual("../../db/models/robot"),
   find: jest.fn().mockResolvedValue(mockRobots),
 }));
 

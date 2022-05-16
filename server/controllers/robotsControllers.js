@@ -1,5 +1,5 @@
 const debug = require("debug")("robots:server:controllers");
-const Robot = require("../../db/models/Robot");
+const Robot = require("../../db/models/robot");
 
 const getRobots = async (req, res) => {
   const robots = await Robot.find();
