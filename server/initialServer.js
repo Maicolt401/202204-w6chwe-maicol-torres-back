@@ -3,7 +3,7 @@ const chalk = require("chalk");
 const app = require(".");
 require("dotenv").config();
 
-const initialServer = async (port) =>
+const initialServer = (port) =>
   new Promise((resolve, reject) => {
     const server = app.listen(port, () => {
       debug(chalk.yellow(`initialized server on port :${port}`));

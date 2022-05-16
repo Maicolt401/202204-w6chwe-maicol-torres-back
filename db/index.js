@@ -1,5 +1,5 @@
 const chalk = require("chalk");
-const debug = require("debug")("robts-api:db:root");
+const debug = require("debug")("robots-api:db:root");
 const mongoose = require("mongoose");
 
 const connectDb = (conectString) =>

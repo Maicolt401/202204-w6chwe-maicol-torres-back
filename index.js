@@ -1,4 +1,5 @@
 require("dotenv").config();
+const chalk = require("chalk");
 
 const debug = require("debug")("robots:root");
 const port = require("./cli");
@@ -8,8 +9,8 @@ const initialServer = require("./server/initialServer");
 (async () => {
   try {
     await connectDb(process.env.DATABASE);
-    await initialServer(port);
+    await initialServer(port || process.env.SERVER || 4005);
   } catch (error) {
-    debug("Error to connect");
+    debug(chalk.red("Error to connect"));
   }
 })();
