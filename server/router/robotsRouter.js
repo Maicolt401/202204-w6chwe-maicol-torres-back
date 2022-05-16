@@ -3,6 +3,6 @@ const getRobots = require("../controllers/robotsControllers");
 
 const robotsRouter = express.Router();
 
-robotsRouter.get("./", getRobots);
+robotsRouter.get("/", getRobots);
 
 module.exports = robotsRouter;
