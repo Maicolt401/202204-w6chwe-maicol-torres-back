@@ -7,6 +7,6 @@ const robotSchema = new Schema({
   energy: { type: Number },
 });
 
-const robot = model("robot", robotSchema, "robots");
+const Robot = model("Robot", robotSchema, "robots");
 
-module.exports = robot;
+module.exports = Robot;

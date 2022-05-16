@@ -6,6 +6,6 @@ program.option("-p --port <port>", "port for the api");
 program.parse();
 
 const { port: pointPort } = program.opts();
-const port = pointPort || process.env.SERVER || 4005;
+const port = pointPort || process.env.PORT || 4005;
 
 module.exports = port;
